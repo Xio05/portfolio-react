@@ -1,35 +1,41 @@
-
-import Card from "./Card";
 import LastPost from "./LastPost";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import NowPlaying from "./NowPlaying";
+import Languages from "./Languages";
+import Contact from "./Contact";
 
 function MainGrid() {
   return (
-    <section className="main">
-      <div className="card">
-        <h3>Projects</h3>
-        <p>Algunos de los proyectos en los que he trabajado.</p>
-        
+    <section className="main-grid">
 
-
-
+      <div className="card last-post">
+        <LastPost />
       </div>
 
-      <div className="card">
-        <h3>Skills</h3>
-        <p>Tecnologías y herramientas que utilizo.</p>
+      <div className="card experience">
+        <Experience />
       </div>
 
-      <div className="card">
-        <h3>About</h3>
-        <p>Un poco sobre mí y mi camino como desarrolladora.</p>
+      <div className="card projects">
+        <Projects />
       </div>
 
-      <div className="card">
-        <h3>Contact</h3>
-        <p>Formas de ponerte en contacto conmigo.</p>
+      <div className="card now-playing">
+        <NowPlaying />
       </div>
+
+      <div className="card languages">
+        <Languages />
+      </div>
+
+      <div className="card contact">
+        <Contact />
+      </div>
+
     </section>
-  )
+  );
 }
 
-export default MainGrid
+export default MainGrid;
+

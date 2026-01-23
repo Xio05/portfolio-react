@@ -29,7 +29,7 @@ function Profile() {
           </a>
 
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/xiomara-vilca-185b1a3a3/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
