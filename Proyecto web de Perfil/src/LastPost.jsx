@@ -1,29 +1,24 @@
 function LastPost() {
   return (
-    <div className="=">
-      <div className="last-post-header">
-        <span className="last-post-label">
-          ✒ Último Post
-        </span>
+    <>
+      <div>
+        <div className="card-header">
+          <i className="ri-quill-pen-line"></i> Último Post
+        </div>
+        <p className="last-post-date">27 de septiembre de 2023</p>
+        <h2>
+          Introducción a la Creación de Animaciones CSS
+        </h2>
+        <div className="tags">
+          <span className="tag">#CSS</span>
+          <span className="tag">#Desarrollo</span>
+        </div>
       </div>
-
-      <p className="last-post-date">27 de septiembre de 2023</p>
-
-      <h2 className="last-post-title">
-        Introducción a la Creación de Animaciones CSS
-      </h2>
-
-      <div className="last-post-tags">
-        <span>#CSS</span>
-        <span>#Desarrollo</span>
-      </div>
-
-      <p className="last-post-description">
-        CSS Grid es un sistema de diseño bidimensional que permite crear
-        diseños de cuadrícula complejos y flexibles en tu sitio web.
+      <p style={{ marginTop: "2.5rem", fontSize: "0.875rem", opacity: 0.6, lineHeight: 1.6 }}>
+        CSS Grid es un sistema de diseño bidimensional que permite crear diseños de cuadrícula complejos y flexibles.
       </p>
-    </div>
-  )
+    </>
+  );
 }
 
-export default LastPost
+export default LastPost;

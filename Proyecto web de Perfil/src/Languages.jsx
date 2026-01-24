@@ -1,30 +1,46 @@
-const languages = [
-  { name: "Inglés ", level: "  Avanzado", percent: 90 },
-  { name: "Español  ", level: "  Nativo", percent: 100 },
-];
+function Languages() {
+  const icons = [
+    // Frontend
+    { class: "devicon-html5-plain colored", title: "HTML" },
+    { class: "devicon-css3-plain colored", title: "CSS" },
+    { class: "devicon-javascript-plain colored", title: "JavaScript" },
+    { class: "devicon-react-original colored", title: "React" },
+    { class: "devicon-bootstrap-plain colored", title: "Bootstrap" },
+    // Backend
+    { class: "devicon-csharp-plain colored", title: "C#" },
+    { class: "devicon-dotnetcore-plain colored", title: ".NET" },
+    { class: "devicon-java-plain colored", title: "Java" },
+    { class: "devicon-kotlin-plain colored", title: "Kotlin" },
+    { class: "devicon-python-plain colored", title: "Python" },
+    // DB
+    { class: "devicon-microsoftsqlserver-plain colored", title: "SQL Server" },
+    { class: "devicon-mysql-plain colored", title: "MySQL" },
+    { class: "devicon-mongodb-plain colored", title: "MongoDB" },
+    // Other
+    { class: "devicon-json-plain colored", title: "JSON" },
+    { class: "devicon-git-plain colored", title: "Git" },
+    { class: "devicon-github-original colored", title: "GitHub" },
+    { class: "devicon-visualstudio-plain colored", title: "Visual Studio" },
+  ];
 
-export default function Languages() {
   return (
-    <div className="">
-      <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] opacity-50">
-        <i className="ri-global-line"></i> Idiomas
+    <div className="slider">
+      <div className="slide-track">
+        {/* Original Set */}
+        {icons.map((icon, index) => (
+          <div className="slide" key={`original-${index}`}>
+            <i className={`${icon.class} lang-icon`} title={icon.title}></i>
+          </div>
+        ))}
+        {/* Duplicate Set for Seamless Loop */}
+        {icons.map((icon, index) => (
+          <div className="slide" key={`duplicate-${index}`}>
+            <i className={`${icon.class} lang-icon`} title={icon.title}></i>
+          </div>
+        ))}
       </div>
-
-      {languages.map((lang, index) => (
-        <div key={index} className="space-y-2">
-          <div className="flex justify-between text-sm">
-            <span className="text-white">{lang.name}</span>
-            <span className="text-slate-500 text-xs">{lang.level}</span>
-          </div>
-
-          <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-gradient-to-r from-teal-500 to-blue-500"
-              style={{ width: `${lang.percent}%` }}
-            ></div>
-          </div>
-        </div>
-      ))}
     </div>
   );
 }
+
+export default Languages;

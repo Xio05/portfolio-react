@@ -1,16 +1,10 @@
 export default function Contact() {
   return (
-    <div className="">
-      
-      <a
-        href="mailto:xiomara@email.com"
-        className="flex items-center gap-3 text-sm font-medium text-white"
-      >
-        <i className="ri-chat-3-line opacity-50"></i>
-        Contactar
-      </a>
-
-      <i className="ri-arrow-right-up-line opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0 text-white text-lg"></i>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', height: '100%' }}>
+      <span style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '0.875rem', fontWeight: 500, color: '#fff' }}>
+        <i className="ri-chat-3-line" style={{ opacity: 0.5 }}></i> Contactar
+      </span>
+      <i className="ri-arrow-right-up-line" style={{ fontSize: '1.125rem', color: '#fff' }}></i>
     </div>
   );
 }
