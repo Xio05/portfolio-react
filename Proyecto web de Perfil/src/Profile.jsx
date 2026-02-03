@@ -16,7 +16,7 @@ function Profile() {
         <div className="profile-info">
           <h1>Xiomara Kimberly Vilca</h1>
           <p className="role"> BACKEND / FRONTEND EN FORMACIÓN</p>
-          <p className="location">Estudiante de Computación e Informática con conocimientos en desarrollo web y bases de datos. Manejo Java, Python, MySQL y JavaScript. Responsable, analítico y con interés en crecer como Analista Programador Junior.</p>
+          <p className="location">Estudiante de Computación e Informática con conocimientos en desarrollo web y bases de datos. Manejo Java, Python, MySQL y JavaScript. Responsable, analítico y con interés en crecer como  Programador Junior.</p>
         </div>
       </div>
 

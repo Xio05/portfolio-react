@@ -16,7 +16,7 @@ function Languages() {
     { class: "devicon-microsoftsqlserver-plain colored", title: "SQL Server" },
     { class: "devicon-mysql-plain colored", title: "MySQL" },
     { class: "devicon-mongodb-plain colored", title: "MongoDB" },
-    // Other
+    
     { class: "devicon-json-plain colored", title: "JSON" },
     { class: "devicon-git-plain colored", title: "Git" },
     { class: "devicon-github-original colored", title: "GitHub" },
@@ -26,13 +26,11 @@ function Languages() {
   return (
     <div className="slider">
       <div className="slide-track">
-        {/* Original Set */}
         {icons.map((icon, index) => (
           <div className="slide" key={`original-${index}`}>
             <i className={`${icon.class} lang-icon`} title={icon.title}></i>
           </div>
         ))}
-        {/* Duplicate Set for Seamless Loop */}
         {icons.map((icon, index) => (
           <div className="slide" key={`duplicate-${index}`}>
             <i className={`${icon.class} lang-icon`} title={icon.title}></i>
